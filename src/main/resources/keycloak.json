@@ -1,0 +1,25 @@
+{
+  "realm": "prodreg",
+  "auth-server-url": "http://localhost:8080/",
+  "ssl-required": "external",
+  "resource": "prodreg-client",
+  "credentials": {
+    "secret": "qRuCNZTLvOXFyvfS8GCBTPPENOWMloaf"
+  },
+  "use-resource-role-mappings": true,
+  "security-constraints": [
+    {
+      "authRoles": [
+        "SALES"
+      ],
+      "securityCollections": [
+        {
+          "patterns": [
+            "/secured/*"
+          ],
+          "name": "prodreg"
+        }
+      ]
+    }
+  ]
+}
